@@ -12,11 +12,18 @@ def encrypt(cadena: str) -> str:
     asciiConcatenado: str = "" 
     cadenaEncriptada: str = "" # Espacio para cadena ya encriptada
 
+    # Paso 1
+    concatCodAscii = "" # Cadena para concatenar los códigos ASCII
+    for letter in cadena:
+        codAscii = str(ord(letter)).zfill(3) # Pasar el código Ascii
+        codAscii = codAscii[-1]+codAscii[0]+codAscii[1] # Rotar el código Ascii de ABC a CAB
+        concatCodAscii += codAscii # Concatenar los nuevos códigos ASCII
+
     return cadenaEncriptada
 
 
 def decrypt(cadenaEncriptada: str) -> str:
-    """Desencriptar
+    """Función encargada de desencriptar
 
     Args:
         cadenaEncriptada (str): Cadena a desencriptar

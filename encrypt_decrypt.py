@@ -37,6 +37,9 @@ def encrypt(cadena: str) -> str:
         codA = int(listNewCodAscii[i])+33
         listNewCodAscii[i] = str(codA).zfill(3)
 
+    # Paso 4
+    for item in listNewCodAscii:
+        cadenaEncriptada += chr(int(item))
 
     return cadenaEncriptada
 

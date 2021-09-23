@@ -32,6 +32,12 @@ def encrypt(cadena: str) -> str:
         concatCodAscii = concatCodAscii[-1]
         listNewCodAscii.add(addCodAscii) # Agregarlo a la lista
 
+    # Paso 3
+    for i in range(len(listNewCodAscii)):
+        codA = int(listNewCodAscii[i])+33
+        listNewCodAscii[i] = str(codA).zfill(3)
+
+
     return cadenaEncriptada
 
 

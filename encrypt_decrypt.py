@@ -20,17 +20,17 @@ def encrypt(cadena: str) -> str:
         concatCodAscii += codAscii # Concatenar los nuevos códigos ASCII
 
     # Paso 2
-    tupleNewCodAscii = () # Tupla para guardar los códigos ASCII del paso 2
+    listNewCodAscii = [] # Lista para guardar los códigos ASCII del paso 2
     cadenaImpar =  (len(concatCodAscii) % 2 == 1) # Calcular si la cadena es impar
     while len(concatCodAscii) > 1:
         addCodAscii = concatCodAscii[0:2].zfill(2) # Ir obteniendo los 2 primeros caracteres
         concatCodAscii = concatCodAscii[2:] #Eliminar los caracteres obtenidos
-        tupleNewCodAscii.add(addCodAscii) # Agregarlos a la tupla
+        listNewCodAscii.append(addCodAscii) # Agregarlos a la lista
 
     if cadenaImpar is True:
         # Sí quedo un último de longitud 1
         concatCodAscii = concatCodAscii[-1]
-        tupleNewCodAscii.add(addCodAscii) # Agregarlo a la tupla
+        listNewCodAscii.add(addCodAscii) # Agregarlo a la lista
 
     return cadenaEncriptada
 

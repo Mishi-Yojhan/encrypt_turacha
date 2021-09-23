@@ -30,7 +30,7 @@ def encrypt(cadena: str) -> str:
     if cadenaImpar is True:
         # Sí quedo un último de longitud 1
         concatCodAscii = concatCodAscii[-1]
-        listNewCodAscii.add(addCodAscii) # Agregarlo a la lista
+        listNewCodAscii.append(addCodAscii) # Agregarlo a la lista
 
     # Paso 3
     for i in range(len(listNewCodAscii)):
@@ -40,6 +40,10 @@ def encrypt(cadena: str) -> str:
     # Paso 4
     for item in listNewCodAscii:
         cadenaEncriptada += chr(int(item))
+
+    # Paso 5
+    if cadenaImpar:
+        cadenaEncriptada += "¿"
 
     return cadenaEncriptada
 

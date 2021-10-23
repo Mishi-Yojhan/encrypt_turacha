@@ -1,12 +1,13 @@
 
 def encrypt(cadena: str) -> str:
-    """Función encargada de encriptar la cadena ingresada
+    """Función encargada de encriptar
+    una cadena de texto.
 
     Args:
-        cadena (str): Cadena a ingresar
+        cadena (str): Cadena a encriptar
 
     Returns:
-        str: Cadena ya encriptada
+        str: cadena encriptada
     """
 
     asciiConcatenado: str = "" 
@@ -50,6 +51,7 @@ def encrypt(cadena: str) -> str:
 
 def decrypt(cadenaEncriptada: str) -> str:
     """Función encargada de desencriptar
+    una cadena de texto.
 
     Args:
         cadenaEncriptada (str): Cadena a desencriptar
@@ -62,4 +64,52 @@ def decrypt(cadenaEncriptada: str) -> str:
 
     # TO DO: Proceso desencriptar
 
+
     return cadenaDesencriptada # Retorno cadena desencriptada
+
+
+# Ejecución del programa sí se ejecuta como script
+if __name__ == "__main__":
+
+    # Ejecución del programa
+    from os import system
+
+    # Definición de función de menú principal
+    def menu():
+        print("""
+    1. Cifrar
+    2. Descifrar
+    3. Salir
+    """)
+
+    # Variable para controlar el bucle principal
+    salir = False
+
+    # Bucle principal
+    while salir is False:
+        menu()
+        opcion = input("Ingrese una opción: ")
+        if opcion == "1":
+            cadena = input("Ingrese la cadena a cifrar: ")
+            cadenaEncriptada = encrypt(cadena)
+            print("Cadena cifrada: ", cadenaEncriptada)
+        elif opcion == "2":
+            cadenaEncriptada = input("Ingrese la cadena a descifrar: ")
+            cadenaDesencriptada = decrypt(cadenaEncriptada)
+            print("Cadena descifrada: ", cadenaDesencriptada)
+        elif opcion == "3":
+            salir = True
+        else:
+            print("Opción inválida")
+
+        # Pausa
+        input("\nPresione una tecla para continuar...")
+        
+        # Limpiar pantalla
+        system("cls")
+
+
+    print("Fin del programa")
+    input("Pulse una tecla para continuar... ")
+    print("\n")
+    

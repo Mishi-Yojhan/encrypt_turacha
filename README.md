@@ -2,12 +2,13 @@
  Script de Python con método de encriptación personal.
 
 ## Instalación
-    Para instalar el script, ejecuta el siguiente comando en la consola:
+Para instalar el script, ejecuta el siguiente comando en la consola:
+
     git clone https://github.com/Mishi-Yojhan/encrypt_turacha.git
     cd encrypt_turacha
 
 ## Uso
-    Para usar el script, ejecuta el siguiente comando en la consola:
+Para usar el script, ejecuta el siguiente comando en la consola:
 
     python encrypt_turacha.py
 
@@ -19,7 +20,7 @@ O en su defecto importar el módulo dentro de una aplicación:
     encrypt_turacha.decrypt("texto a desencriptar")
 
 ## Autor
-    * [@Mishi-Yojhan](https://github.com/Mishi-Yojhan)
+* [@Mishi-Yojhan](https://github.com/Mishi-Yojhan)
 
 
 ## Notas
@@ -29,11 +30,9 @@ O en su defecto importar el módulo dentro de una aplicación:
     No es más seguro que algún otro método de encriptación como el [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) por ejemplo.
 
 ## Agradecimientos
-    Agradecimientos especiales a:
-    * GitHub Copilot
+Agradecimientos especiales a:
+* GitHub Copilot
 
 ## Bibliografía
-    * [Python](https://www.python.org/)
+* [Python](https://www.python.org/)
 
-
-   

@@ -24,7 +24,7 @@ O en su defecto importar el módulo dentro de una aplicación:
 
 
 ## Notas
-    Esta es una versión de práctica, no es una versión oficial.
+Esta es una versión de práctica, no es una versión oficial.
     No se recomienda usar esta versión en una aplicación de producción.
     Este método de encriptación es una versión de práctica, no es una versión oficial.
     No es más seguro que algún otro método de encriptación como el [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) por ejemplo.
